@@ -1,5 +1,4 @@
-    ASUS RT-N11P/N14U/N56U/N65U/AC51U/AC54U/AC1200/AC1200HP custom firmware by Padavan
-
+ASUS RT-N11P/N14U/N56U/N65U/AC51U/AC54U/AC1200/AC1200HP custom firmware by Padavan
 
 Project sources:
 git clone https://bitbucket.org/padavan/rt-n56u.git
@@ -30,7 +29,6 @@ After upgrade to 3.X.3.8-085 (and higher) from any previous builds, please:
 After manual NVRAM reset:
  - Both Wireless AP security is WPA2-Personal with pre-shared key 1234567890 by default.
  - HTTP and Telnet/SSH login:passw is admin:admin by default.
-
 
                               LIST OF CHANGES
 
@@ -63,7 +61,6 @@ After manual NVRAM reset:
 - WebUI: add control of Cron daemon and Crontabs.
 - WebUI: add support SD card and SATA control.
 
-
 3.X.3.9-098:
 ----------------------------------------------------------
 [RT-N56U_B1]
@@ -86,7 +83,6 @@ After manual NVRAM reset:
 - Control: fixed L2TP client regression introduced on the 097 build.
 - Scripts: migrated to Entware-ng repository (thanks to Alexander Ryzhov).
 - WebUI: removed bogus safe login logic for AP mode.
-
 
 3.X.3.9-097:
 ----------------------------------------------------------
@@ -141,7 +137,6 @@ After manual NVRAM reset:
 - WebUI: improved WDS control, allow WDS lazy on bridge mode.
 - WebUI: show AP-Client and WDS connection info.
 - WebUI: allow to edit last deleted row values.
-
 
 3.X.3.9-095:
 ----------------------------------------------------------
@@ -199,7 +194,6 @@ After manual NVRAM reset:
 - Fixed httpd server segfault on malformed requests.
 - Fixed WPS/Wi-Fi buttons event handler, limiting short-press detection pulse to 500ms.
 
-
 3.X.3.9-091:
 ----------------------------------------------------------
 [RT-N11P]
@@ -228,7 +222,6 @@ After manual NVRAM reset:
 - Fixed restart SMB server from WebUI on some cases.
 - Fixed show VPN server ACL list on WebUI.
 
-
 3.X.3.8-088:
 ----------------------------------------------------------
 [RT-N11P]
@@ -253,7 +246,6 @@ After manual NVRAM reset:
 - Fixed RTL8367 IGMP snooping (ignore snooping for reserved L2 groups).
 - Fixed init Ralink EHCI on router startup.
 - Fixed direct toggle Wireless bridge modes WISP <-> LAN from WebUI.
-
 
 3.X.3.8-085:
 ----------------------------------------------------------
@@ -327,7 +319,6 @@ After manual NVRAM reset:
 - Fixed broken OpenSSH DH moduli.
 - Fixed background syslog fetching from WebUI float panel.
 
-
 3.X.3.8-081:
 ----------------------------------------------------------
 - Fixed WAN DHCP6C client IA-ID (now generated from WAN MAC).
@@ -352,7 +343,6 @@ After manual NVRAM reset:
 - Improved WebUI render under IE11.
 - Improved WebUI response.
 
-
 3.X.3.8-080:
 ----------------------------------------------------------
 - Toolchain: migrate to binutils-2.24.
@@ -371,7 +361,6 @@ After manual NVRAM reset:
 - Updated exFAT code to 1.2.8.
 - Updated xUPnPd to rev397.
 - Updated p910nd to 0.97.
-
 
 3.X.3.7-079:
 ----------------------------------------------------------
@@ -407,7 +396,6 @@ After manual NVRAM reset:
 - Tune LAN DHCPv6 server IRT=1800 for static modes.
 - Tune some default Transmission options.
 
-
 3.X.3.7-075:
 ----------------------------------------------------------
 [RT-N56U]
@@ -428,7 +416,6 @@ After manual NVRAM reset:
 - Updated xUPnPd to rev395.
 - Increased max allowed VPN clients to 50.
 
-
 3.X.3.7-072:
 ----------------------------------------------------------
 [RT-N56U]
@@ -444,7 +431,6 @@ After manual NVRAM reset:
 - Added hardware watchdog timer control to WebUI.
 - Added dropdown menu for fast select DLNA media path,
   fixed output national resources from NVRAM to WebUI.
-
 
 3.X.3.7-071:
 ----------------------------------------------------------
@@ -467,7 +453,6 @@ After manual NVRAM reset:
 - Updated dropbear SSH to v2013.60, added SHA2_256_HMAC support.
 - Fixed isolation between AP and GuestAP clients.
 - Fixed private subnet 172.16.0.0/12 check on "VPN Server" WebUI page.
-
 
 3.X.3.6-069:
 ----------------------------------------------------------
@@ -497,7 +482,6 @@ After manual NVRAM reset:
 - Fixed kernel timezone offset for timezones with active summer time (MAC/URL filter time related).
 - Fixed overlap days traffic in Main_TrafficMonitor_daily.asp.
 
-
 3.X.3.6-068:
 ----------------------------------------------------------
 [RT-N56U]
@@ -518,7 +502,6 @@ After manual NVRAM reset:
 - Fixed httpd POST buffer overflow for more textarea data.
 - Fixed private subnet caption in VPN server ACL list.
 - Fixed memory leak in tcpcheck utility.
-
 
 3.X.3.6-066:
 ----------------------------------------------------------
@@ -564,7 +547,6 @@ After manual NVRAM reset:
 - Fixed SMB server in full access mode: allow full access for all users.
 - Fixed Bucharest daylight time.
 
-
 3.X.3.6-064:
 ----------------------------------------------------------
 [RT-N56U]
@@ -593,7 +575,6 @@ After manual NVRAM reset:
 - Fixed control USB devices on nested USB Hubs.
 - Fixed Minsk timezone (disable daylight time).
 
-
 3.0.3.6-061:
 ----------------------------------------------------------
 [RT-N56U]
@@ -615,7 +596,6 @@ After manual NVRAM reset:
 - Fixed disable DDNS from WebUI.
 - Fixed changing Router/AP role at manual NVRAM commit mode.
 - Project configuration enhancements, added example configs.
-
 
 3.0.3.5-058:
 ----------------------------------------------------------
@@ -640,7 +620,6 @@ After manual NVRAM reset:
 - Fixed issue for HDD > 2TB via some USB-SATA bridges (fix from kernel-3.8).
 - Fixed WWAN offload issue for NCM/MBIM USB modems in NDIS mode (e.g. Huawei E3276).
 - Fixed INADYN DDNS service dnsexit.com. Changed DDNS force update period to 7 days.
-
 
 3.0.3.5-055:
 ----------------------------------------------------------
@@ -669,7 +648,6 @@ After manual NVRAM reset:
 - Fixed blocking progressbar during firmware upgrade under many anti-Adware software.
 - Fixed daylight time for USA, Canada, Brazil.
 
-
 3.0.3.4-048:
 ----------------------------------------------------------
 [RT-N65U]
@@ -691,7 +669,6 @@ After manual NVRAM reset:
 - Fixed daylight time for Azores, Greenwich. Disabled daylight for
   Casablanca/Monrovia.
 
-
 3.0.3.3-046:
 ----------------------------------------------------------
 - Fixed daylight time for European timezones CET and EET.
@@ -699,7 +676,6 @@ After manual NVRAM reset:
 - Added IPv6 fixes from upstream kernels.
 - Improved stability RTL8367 switch initialization on system startup.
 - Improved WebGUI design for PPPoE VPN + MAN connection.
-
 
 3.0.3.3-045:
 ----------------------------------------------------------
@@ -728,7 +704,6 @@ After manual NVRAM reset:
 - Removed bogus Wireless bandwidth mode 40MHz Only (not used by Ralink/MTK WiFi drivers).
 - Removed port trigger dead feature.
 
-
 3.0.3.3-041:
 ----------------------------------------------------------
 [RT-N65U]
@@ -739,7 +714,6 @@ After manual NVRAM reset:
 - Added ip route multipath to kernel config.
 - Updated kernel-3.0.x to 3.0.61 from www.kernel.org.
 - Fixed random SoC hangup on start ra0 interface (AP 5GHz).
-
 
 3.0.3.3-040:
 ----------------------------------------------------------
@@ -755,7 +729,6 @@ After manual NVRAM reset:
 - Updated kernel-3.0.x to 3.0.60 from www.kernel.org.
 - Fixed WAN traffic history, save history to /etc/storage.
 - Fixed double instanced interface ra1 on hw_nat.ko.
-
 
 3.0.3.3-038:
 ----------------------------------------------------------
@@ -799,7 +772,6 @@ After manual NVRAM reset:
 - Fixed disabled FTP/SMB access controls in WebGUI on shares with LABEL.
 - Fixed Astana timezone label.
 
-
 3.0.3.1-027:
 ----------------------------------------------------------
 [RT-N65U]
@@ -824,7 +796,6 @@ After manual NVRAM reset:
 - Added On/Off front LEDs rule to WPS button action.
 - Added applet /sbin/restart_wan.
 
-
 3.0.3.0-026:
 ----------------------------------------------------------
 [RT-N65U]
@@ -838,7 +809,6 @@ After manual NVRAM reset:
   Page Allocation Failure during Minidlna scan ton mediafiles.
 - Fixed DHCP client renew issue after EAPoL-MD5 authentication.
 
-
 3.0.3.0-025:
 ----------------------------------------------------------
 - Added Entware repo support (http://code.google.com/p/wl500g-repo/).
@@ -849,7 +819,6 @@ After manual NVRAM reset:
 - Updated nvram driver, used ioctl instead of mmap for prevent kernel memory corruption.
 - Fixed switch WAN/LAN isolation on STB port selected in 1xRGMII scheme (VLAN 1/2).
 - Temporarily disabled IGMP snooping feature for Realtek RTL8367B series giga-switch (N65U).
-
 
 3.0.3.0-022:
 ----------------------------------------------------------
@@ -865,11 +834,9 @@ After manual NVRAM reset:
 - Updated package ffmpeg to v0.11.2 for resolve minidnla scan deadlock issues.
 - Added build target for Samsung CY-SWR1100 board.
 
-
 3.0.2.8-021:
 ----------------------------------------------------------
 - Enabled rp-l2tp client by default for L2TP WAN (issues with xl2tpd HELLO for ISP Beeline).
-
 
 3.0.2.7-020:
 ----------------------------------------------------------
@@ -885,7 +852,6 @@ After manual NVRAM reset:
 - Fixed memleaks in miniupnpd.
 - Updated Transmission to v2.73+.
 
-
 3.0.2.7-019:
 ----------------------------------------------------------
 - Added manual control for UDP flows offload via PPE (HW_NAT).
@@ -900,7 +866,6 @@ After manual NVRAM reset:
 - Increased gateway lifetime to 30 min in Router Advertisement.
 - Used router self LAN IPv6 address as RDNSS in Router Advertisement.
 - Fixed WebGUI menu and sitemap in AP mode.
-
 
 3.0.2.6-018:
 ----------------------------------------------------------
@@ -918,7 +883,6 @@ After manual NVRAM reset:
 - Added custom FTP port from WAN access.
 - Updated Transmission to v2.71.
 - Updated OpenSSL to v1.0.1c with MIPS32 asm for many cyphers.
-
 
 3.0.2.5-015:
 ----------------------------------------------------------
@@ -950,13 +914,11 @@ After manual NVRAM reset:
 - Updated dnsmasq from upstream.
 - Updated miniupnpd to v1.7.20120824.
 
-
 1.1.2.3-010:
 ----------------------------------------------------------
 - Fixed bug in javascript on Web pages Wireless - Wireless MAC Filter.
 - Fixed bug in NTFS driver (missing kernel library TEXTSEARCH in kernel config). Regression in 
   ver. 1.1.2.3-009.
-
 
 1.1.2.3-009:
 ----------------------------------------------------------
@@ -996,7 +958,6 @@ After manual NVRAM reset:
 - Fixed "Wi-Fi scheduler time-zone changes won't take effect without reboot" issue.
 - Updated dnsmasq to ver. 2.63.
 
-
 1.1.2.2-006:
 ----------------------------------------------------------
 - Fixed large files (>2GB) support in vsftpd 2.3.5 (regression in ver. 1.1.2.2-005).
@@ -1013,7 +974,6 @@ After manual NVRAM reset:
 - Added anonymous share modes for internal FTP server (vsftpd).
 - Added "LED OFF" mode for green/yellow LEDs on PHY ports of Ethernet switch.
 - Ability to disable ARP ping alive of remote gateway for "IPoE: Automatic IP" WAN mode.
-
 
 1.1.2.2-005:
 ----------------------------------------------------------
@@ -1047,12 +1007,10 @@ After manual NVRAM reset:
 - Fixed issues on the Advanced_WAN_Content.asp page (NewGUI).
 - Fixed the output format of Route table in the Web GUI.
 
-
 1.1.2.1-004:
 ----------------------------------------------------------
 - Reverted upstream commit "pppd: Make MSCHAP-v2 cope better with packet loss" due to 
   the pppd failure in conjunction with some ISPs (regression in ver. 1.1.2.1-002).
-
 
 1.1.2.1-003:
 ----------------------------------------------------------
@@ -1087,12 +1045,10 @@ After manual NVRAM reset:
 - Deleted a lot of deprecated strings from NVRAM to free available NVRAM space. Router reset to 
   firmware defaults is necessary for the changes to take place.
 
-
 1.1.2.1-002:
 ----------------------------------------------------------
 - Fixed L2TP bogus "Authentication failed" for ISP Beeline on new tariffs.
 - Fixed broken Tx Power for WiFi 5GHz.
-
 
 1.1.2.0-001:
 ----------------------------------------------------------
@@ -1113,7 +1069,6 @@ After manual NVRAM reset:
 - Fixed RDP connections through VPN PPTP server with MPPE encryption.
 - Changed firmware version build rule.
 
-
 1.1.1.8f-b8:
 ----------------------------------------------------------
 - Update Linux kernel to wive-rtnl trunc 3.0.5:
@@ -1130,8 +1085,6 @@ After manual NVRAM reset:
 - Kernel param rp_filter (reverse-path filter) moved to custom start script and not more overwrited from rc.
 - Updated dnsmasq to v2.62.
 - Increased delay after reset USB host for more stable USB devices detection on router startup.
-
-
 
 1.1.1.8f-b7:
 ----------------------------------------------------------
@@ -1176,7 +1129,6 @@ After manual NVRAM reset:
 - Disabled miniupnpd noisy debug messages to syslog.
 - Closed all network connections before router reboot, after firmware update from WebGUI.
 
-
 1.1.1.8f-b6:
 ----------------------------------------------------------
 - Update Linux kernel to wive-rtnl trunc 2.5.1:
@@ -1190,7 +1142,6 @@ After manual NVRAM reset:
 - Fixed reload user static routes for LAN.
 - Fixed WAN down action for WAN static IP.
 - Added Ralink hw_nat utility for debug HW_NAT states.
-
 
 1.1.1.8f-b5:
 ----------------------------------------------------------
@@ -1215,7 +1166,6 @@ After manual NVRAM reset:
 - Added ability to set HDD spindown timer and disable APM via WebGUI. Some USB HDD 
   drives do not support these functions.
 
-
 1.1.1.8e-b4:
 ----------------------------------------------------------
 - Update Linux kernel to wive-rtnl trunc 2.5.x:
@@ -1237,7 +1187,6 @@ After manual NVRAM reset:
   tcp_syncookies disabled by default.
 - Reworked project tree build logic, support all params from ".config" file.
 
-
 1.1.1.8e-b3:
 ----------------------------------------------------------
 - Update Linux kernel to wive-rtnl trunc 2.4.1:
@@ -1252,7 +1201,6 @@ After manual NVRAM reset:
 - Added load user mappings from /etc/storage/hosts.
 - Added flush conntrack table and route table after WAN down action.
 - NAT loopback now enabled by default.
-
 
 1.1.1.8e-b2:
 ----------------------------------------------------------
@@ -1271,8 +1219,6 @@ After manual NVRAM reset:
 - Added NAT type select - RCONE/FCONE/Linux. RCONE by default.
 - Security patch CVE-2012-1182.patch for samba-3.0.37.
 - Fixed some bugs in WebGUI.
-
-
 
 -
 01/31/2016

@@ -1,10 +1,6 @@
-![CI](https://github.com/hanwckf/rt-n56u/workflows/CI/badge.svg)
-![GitHub All Releases](https://img.shields.io/github/downloads/hanwckf/rt-n56u/total)
-[![release](https://img.shields.io/github/release/hanwckf/rt-n56u.svg)](https://github.com/hanwckf/rt-n56u/releases)
-
 # README #
 
-Welcome to the rt-n56u project
+Welcome to the rt-n56u(padavan) project
 
 This project aims to improve the rt-n56u and other supported devices on the software part, allowing power user to take full control over their hardware.
 This project was created in hope to be useful, but comes without warranty or support. Installing it will probably void your warranty. 
@@ -110,33 +106,23 @@ Contributors of this project are not responsible for what happens next.
 ```shell
 # Debian/Ubuntu
 sudo apt update
-sudo apt install unzip libtool-bin curl cmake gperf gawk flex bison nano xxd \
-	fakeroot kmod cpio git python-docutils gettext automake autopoint \
-	texinfo build-essential help2man pkg-config zlib1g-dev libgmp3-dev \
-	libmpc-dev libmpfr-dev libncurses5-dev libltdl-dev wget libc-dev-bin
+sudo apt install automake autopoint bison build-essential cmake cpio curl fakeroot flex gawk gettext git gperf help2man kmod libgmp3-dev libltdl-dev libmpc-dev libmpfr-dev libncurses5-dev libc-dev-bin libtool-bin nano pkg-config python-docutils texinfo unzip wget xxd zlib1g-dev
 
-# Archlinux/Manjaro
-sudo pacman -Syu --needed git base-devel cmake gperf ncurses libmpc \
-        gmp python-docutils vim rpcsvc-proto fakeroot cpio help2man
+# ArchLinux/Manjaro
+sudo pacman -Syu --needed base-devel cmake cpio fakeroot git gmp gperf help2man libmpc ncurses python-docutils rpcsvc-proto vim
 
 # Alpine
-sudo apk add make gcc g++ cpio curl wget nano xxd kmod \
-	pkgconfig rpcgen fakeroot ncurses bash patch \
-	bsd-compat-headers python2 python3 zlib-dev \
-	automake gettext gettext-dev autoconf bison \
-	flex coreutils cmake git libtool gawk sudo
+sudo apk add automake autoconf bash bison bsd-compat-headers cmake coreutils cpio curl fakeroot flex g++ gawk gcc gettext gettext-dev git kmod libtool make nano ncurses patch pkgconfig python2 python3 rpcgen sudo wget xxd zlib-dev
 
 # CentOS 7
 sudo yum update
 sudo yum groupinstall "Development Tools"
-sudo yum install ncurses-* flex byacc bison zlib-* texinfo gmp-* mpfr-* gettext \
-	libtool* libmpc-* gettext-* python-docutils nano help2man fakeroot
+sudo yum install bison byacc fakeroot flex gettext gettext-* gmp-* help2man libmpc-* libtool* mpfr-* nano ncurses-* python-docutils texinfo zlib-*
 
 # CentOS 8
 sudo yum update
 sudo yum groupinstall "Development Tools"
-sudo yum install ncurses-* flex byacc bison zlib-* gmp-* mpfr-* gettext \
-	libtool* libmpc-* gettext-* nano fakeroot
+sudo yum install bison byacc fakeroot flex gettext gettext-* gmp-* libmpc-* libtool* mpfr-* nano ncurses-* zlib-*
 
 # CentOS 8不能直接通过yum安装texinfo，help2man，python-docutils。请去官网下载发行的安装包编译安装
 # 以texinfo为例
@@ -153,8 +139,7 @@ sudo yum install ncurses-* flex byacc bison zlib-* gmp-* mpfr-* gettext \
 * 克隆源码
 
 ```shell
-git clone --depth=1 https://e.coding.net/hanwckf/rt-n56u/padavan.git /opt/rt-n56u
-#git clone --depth=1 https://github.com/hanwckf/rt-n56u.git /opt/rt-n56u
+git clone https://github.com/1582130940/hanwckf-padavan.git /opt/rt-n56u --depth=1
 ```
 
 * 准备工具链
@@ -188,8 +173,3 @@ fakeroot ./build_firmware_modify PSG1218
 ```
 
 ***
-
-### 请参阅 ###
-- https://www.jianshu.com/p/cb51fb0fb2ac
-- https://www.jianshu.com/p/6b8403cdea46
-
