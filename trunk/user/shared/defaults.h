@@ -35,8 +35,8 @@
 #define DEF_LAN_DHCP_END	"192.168.2.244"
 #define DEF_LAN_MASK		"255.255.255.0"
 
-#define DEF_WLAN_2G_CC		"CN"
-#define DEF_WLAN_5G_CC		"US"
+#define DEF_WLAN_2G_CC		"DE"
+#define DEF_WLAN_5G_CC		"DE"
 #define DEF_WLAN_2G_SSID	BOARD_PID
 #define DEF_WLAN_5G_SSID	BOARD_PID "_5G"
 #define DEF_WLAN_2G_GSSID	BOARD_PID "_GUEST"
